@@ -1,165 +1,127 @@
-<!-- Bilingual About. Keep README.md and About/README.md synchronized. -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/about-dark.svg">
-  <img src="../assets/about-light.svg" alt="Binwei Lei — HCI research, immersive systems and games" width="1200">
-</picture>
+[中文](README.md) / English
 
-[中文](README.md) · **English**
+<img align="right" src="../assets/portrait.jpg" width="96" height="114" alt="Portrait of Binwei Lei">
 
-[Portfolio ↗](https://14mountain.com/) · [Email](mailto:dezray078@gmail.com) · [LinkedIn ↗](https://www.linkedin.com/in/binwei-lei-93976933a/)
+# Binwei Lei
 
-## 01 / About
+雷滨玮 · Building XR experiences, AI systems and games.
 
-**Binwei Lei / 雷滨玮**, a Digital Media Technology undergraduate at Xi’an Jiaotong-Liverpool University. I build immersive interactions, digital humans, AI applications and games, and contribute to HCI research—turning ideas into systems people can use, experience and evaluate.
+A Digital Media Technology undergraduate at Xi’an Jiaotong-Liverpool University. I build interactive systems and study how people experience them. Beyond code: fiction, poetry and playing in a band.
 
-I care about how systems work and how people feel within them. Beyond code, I write fiction and poetry, and play in a band.
+[Portfolio ↗](https://14mountain.com/) &nbsp; / &nbsp; [Email](mailto:dezray078@gmail.com) &nbsp; / &nbsp; [LinkedIn ↗](https://www.linkedin.com/in/binwei-lei-93976933a/)
 
-| Background | Experience |
-| :--- | :--- |
-| Education | XJTLU · BEng in Digital Media Technology · 2022–2027 (expected) |
-| Research | XJTLU Virtual Engineering Center · Research Assistant · Sep 2025–Jul 2026 |
-| Internship | Perflection AI · Software Engineering Intern · Apr–Jul 2026 |
+<br clear="right">
 
-**Tools & technologies**　Unity / C# · Unreal Engine · Python / FastAPI · LLM / RAG · VR / XR
+<details>
+<summary>Background & experience</summary>
 
-## 02 / Selected work
+- XJTLU · BEng in Digital Media Technology, 2022–2027 (expected)
+- XJTLU Virtual Engineering Center · Research Assistant, Sep 2025–Jul 2026
+- Perflection AI · Software Engineering Intern, Apr–Jul 2026
 
-From research prototypes to playable worlds. Each entry explains what the project does and the work I was responsible for. Project source code remains private; public project repositories will host playable builds and setup or deployment guides.
+Unity / C# · Unreal Engine · Python / FastAPI · LLM / RAG · VR / XR
 
-### Engineering & applications
+</details>
 
-#### Digital Lim · 2025–2026
+## Selected work
 
-An interactive digital-human system bringing high-fidelity avatars and real-time voice conversation into presentation and communication settings.
+### Digital Lim
 
-**My role** — Startup Founder · System Developer.
+<sub>Digital human · 2025–2026 · Unreal Engine / LLM</sub>
 
-Founded Suzhou Qianjing Tech and led system architecture and interaction development, connecting digital avatars with LLM conversation and taking the project through demonstrations and startup pitches.
+<a href="https://14mountain.com/engineering-digital-lim"><img src="../assets/digital-lim.jpg" width="100%" alt="Five full-body rendered views of the Digital Lim avatar"></a>
 
-**Recognition** — Second Prize · 2025 SIP OPC Roadshow
+A high-fidelity digital human built for real-time conversation. I led system architecture and interaction development, connected the avatar with LLM dialogue, and took the system through demonstrations and deployment work.
 
-**Tools** — Unreal Engine · Digital Humans · LLM
+[Project details ↗](https://14mountain.com/engineering-digital-lim) &nbsp; / &nbsp; GitHub · Coming soon
 
-GitHub — Coming soon · [Project details ↗](https://14mountain.com/engineering-digital-lim)
+### VR Psychological Support
 
----
+<sub>Interaction research · 2026 · Unity / Unreal Engine</sub>
 
-#### OLAI · Overleaf Writing Assistant · 2025
+<a href="https://14mountain.com/research-vr-therapist"><img src="../assets/vr-support.jpg" width="100%" alt="Forest and waterfall scene from the VR Grounding module, cropped from a research figure"></a>
 
-An AI writing assistant that turns Chinese or English instructions into LaTeX, helping researchers prepare academic documents for Overleaf.
+User-controlled VR coping experiences, developed with Dushu Lake Hospital. I designed interactions across three modules and led development: voice AI for Grounding, the complete Drift Bottle module, and the template used to build Safe House.
 
-**My role** — Backend Developer.
+[Project details ↗](https://14mountain.com/research-vr-therapist) &nbsp; / &nbsp; GitHub · Coming soon
 
-Independently developed the entire backend with Python and FastAPI, integrated Qwen3 and Doc2X OCR, and used SQLite for persistent data.
+### All Masks, One Altar
 
-**Recognition** — Software Copyright Registration · 2025SR2161515
+<sub>Puzzle platformer · GGJ 2026 · Unity</sub>
 
-**Tools** — Python · FastAPI · Qwen3
+<a href="https://14mountain.com/games-masks"><img src="../assets/all-masks.jpg" width="100%" alt="Stage environment artwork from All Masks, One Altar"></a>
 
-GitHub — Coming soon · [Project details ↗](https://14mountain.com/engineering-olai)
+Cooperate with your past self through hidden platforms, puzzles and bullet hell. I proposed the shadow-clone mechanic and implemented input recording and replay, platform switching, and defensive bullet-hell encounters.
 
----
+[Project details ↗](https://14mountain.com/games-masks) &nbsp; / &nbsp; GitHub · Coming soon
 
-### Research
+<br>
 
-#### VR Psychological Support System · 2026
+<details>
+<summary>More projects · games, research & applications</summary>
 
-A VR psychological support system developed with Dushu Lake Hospital, with Grounding, Drift Bottle, and Safe House modules for user-controlled coping experiences.
+### Lockdown: Breakout
 
-**My role** — Core Developer · Systems Integrator.
-
-Designed interactions and led development across three modules: integrated voice AI and a state machine for Grounding, independently built Drift Bottle, and created the template a teammate used to complete Safe House.
-
-**Tools** — Unity · Unreal Engine · HCI
-
-GitHub — Coming soon · [Project details ↗](https://14mountain.com/research-vr-therapist)
-
----
-
-#### Post-Stroke Rehabilitation Games · 2025
-
-Three interactive games for post-stroke motor rehabilitation, translating isokinetic, isometric, and isotonic exercises into tasks connected to rehabilitation equipment.
-
-**My role** — Game Designer · Unity Developer · Systems Integrator.
-
-Independently designed all three games during SURF 2025 and completed all Unity development and equipment integration, translating rehabilitation movements into playable interactions.
-
-**Tools** — Unity · Rehabilitation · SURF
-
-GitHub — Coming soon · [Project details ↗](https://14mountain.com/research-stroke-rehab)
-
----
-
-#### Physiological Responses in VR Horror · 2024–2025
-
-A study comparing baseline, jump-scare, and atmospheric environments to examine how different VR stimuli relate to physiological and subjective responses.
-
-**My role** — Developer · Researcher.
-
-Developed a Unity VR horror prototype with three controlled environments during SURF 2024, providing experimental scenes for comparing physiological and subjective responses to immersive stimuli.
-
-**Recognition** — Computers & Graphics 2025 · ICXR Best Paper Honorable Mention
-
-**Tools** — Unity · VR · Biosignals
-
-GitHub — Coming soon · [Project details ↗](https://14mountain.com/research-vr-horror)
-
----
-
-### Games
-
-#### Lockdown: Breakout · 2025
+<sub>2025 · Game Designer · Lead Developer</sub>
 
 A standalone VR horror escape game expanded from a research prototype, combining environmental puzzles, enemy pursuit, and embodied weapon interactions.
 
-**My role** — Game Designer · Lead Developer.
-
 Designed two-floor progression, enemy routes, hiding-space objectives, and a route to retrieve a missed weapon. Proposed an enemy-slowing gun, built the core gameplay, and integrated systems for a three-person team.
 
-**Recognition** — Best Entertainment Award · 2025 Star Shark Cup, Professional Category
+Best Entertainment Award · 2025 Star Shark Cup, Professional Category
 
-**Tools** — Unity · VR · Game Design
+[Project details ↗](https://14mountain.com/engineering-lockdown) &nbsp; / &nbsp; GitHub · Coming soon
 
-GitHub — Coming soon · [Project details ↗](https://14mountain.com/engineering-lockdown)
+### OLAI · Overleaf Writing Assistant
 
----
+<sub>2025 · Backend Developer</sub>
 
-#### All Masks, One Altar · 2026
+An AI writing assistant that turns Chinese or English instructions into LaTeX, helping researchers prepare academic documents for Overleaf.
 
-A 2D puzzle-platformer about hidden platforms and cooperating with your past self, using a replaying shadow clone to solve puzzles and survive bullet-hell encounters.
+Independently developed the entire backend with Python and FastAPI, integrated Qwen3 and Doc2X OCR, and used SQLite for persistent data.
 
-**My role** — Game Designer · Lead Programmer.
+Software Copyright Registration · 2025SR2161515
 
-Proposed the shadow-clone mechanic and implemented input recording and replay, platform switching, and defensive bullet-hell encounters as part of a six-person team.
+[Project details ↗](https://14mountain.com/engineering-olai) &nbsp; / &nbsp; GitHub · Coming soon
 
-**Recognition** — Global Game Jam 2026
+### Post-Stroke Rehabilitation Games
 
-**Tools** — Unity · Game Jam · Puzzle Platformer
+<sub>2025 · Game Designer · Unity Developer · Systems Integrator</sub>
 
-GitHub — Coming soon · [Project details ↗](https://14mountain.com/games-masks)
+Three interactive games for post-stroke motor rehabilitation, translating isokinetic, isometric, and isotonic exercises into tasks connected to rehabilitation equipment.
 
----
+Independently designed all three games during SURF 2025 and completed all Unity development and equipment integration, translating rehabilitation movements into playable interactions.
 
-#### Poor Wife · 2025
+[Project details ↗](https://14mountain.com/research-stroke-rehab) &nbsp; / &nbsp; GitHub · Coming soon
+
+### Physiological Responses in VR Horror
+
+<sub>2024–2025 · Developer · Researcher</sub>
+
+A study comparing baseline, jump-scare, and atmospheric environments to examine how different VR stimuli relate to physiological and subjective responses.
+
+Developed a Unity VR horror prototype with three controlled environments during SURF 2024, providing experimental scenes for comparing physiological and subjective responses to immersive stimuli.
+
+Computers & Graphics 2025 · ICXR Best Paper Honorable Mention
+
+[Project details ↗](https://14mountain.com/research-vr-horror) &nbsp; / &nbsp; GitHub · Coming soon
+
+### Poor Wife
+
+<sub>2025 · Narrative Systems Developer</sub>
 
 A first-person psychological horror visual novel in which dialogue and deduction gradually reveal the truth behind a tragedy.
 
-**My role** — Narrative Systems Developer.
-
 Designed and implemented branching conversations with Dialogue System for Unity, managing conditional triggers, variables, and narrative states so the story responds to player choices.
 
-**Recognition** — Global Game Jam 2025
+Global Game Jam 2025
 
-**Tools** — Unity · Narrative Systems · Game Jam
+[Project details ↗](https://14mountain.com/games-poor-wife) &nbsp; / &nbsp; GitHub · Coming soon
 
-GitHub — Coming soon · [Project details ↗](https://14mountain.com/games-poor-wife)
+</details>
 
 ---
 
-## 03 / Contact
+Project source stays private. Playable builds and setup guides will be published in dedicated repositories.
 
-Get in touch about immersive interaction, HCI research, game development, or an idea worth building together.
-
-[dezray078@gmail.com](mailto:dezray078@gmail.com) · [14mountain.com ↗](https://14mountain.com/)
-
-Public access to a playable build does not imply an open-source license. Usage and redistribution terms will be stated in each project’s release documentation.
+[dezray078@gmail.com](mailto:dezray078@gmail.com) &nbsp; / &nbsp; [14mountain.com ↗](https://14mountain.com/)
