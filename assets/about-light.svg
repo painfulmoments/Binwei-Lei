@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="286" viewBox="0 0 1200 286" role="img" aria-labelledby="title desc">
+  <title id="title">Binwei Lei — About &amp; Selected Work</title>
+  <desc id="desc">HCI research, immersive systems, and games. A minimal typographic identity.</desc>
+  <rect width="1200" height="286" fill="#f5f4ef"/>
+  <path d="M40 39H1160" stroke="#232320" stroke-width="1"/>
+  <rect x="40" y="60" width="7" height="7" fill="#c43824"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="60" y="67" font-size="12" letter-spacing="2" fill="#66665f">PERSONAL PROFILE / SELECTED WORK</text>
+    <text x="33" y="191" font-size="112" font-weight="600" letter-spacing="-7" fill="#232320">Binwei Lei<tspan fill="#c43824">.</tspan></text>
+    <text x="40" y="248" font-size="12" letter-spacing="1.7" fill="#66665f">HCI RESEARCH / IMMERSIVE SYSTEMS / GAMES</text>
+    <text x="1160" y="135" text-anchor="end" font-size="12" letter-spacing="2" fill="#66665f">01 / ABOUT</text>
+    <text x="1160" y="161" text-anchor="end" font-size="12" letter-spacing="2" fill="#66665f">02 / PROJECTS</text>
+    <text x="1160" y="187" text-anchor="end" font-size="12" letter-spacing="2" fill="#66665f">03 / CONTACT</text>
+  </g>
+</svg>
