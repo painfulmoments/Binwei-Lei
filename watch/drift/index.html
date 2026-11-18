@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#E9E5E4">
+  <meta name="description" content="Watch the Drift XR demonstration: fixed breathing guidance with independent heart-rate visualization.">
+  <title>Drift — demonstration video</title>
+  <style>
+    @font-face { font-family:Plex; src:url('./assets/IBMPlexSans-Regular.ttf') format('truetype'); font-style:normal; font-weight:400; font-display:swap; }
+    @font-face { font-family:Nunito; src:url('./assets/NunitoSans-Bold.ttf') format('truetype'); font-style:normal; font-weight:700; font-display:swap; }
+    :root { color-scheme:light; --paper:#E9E5E4; --ink:#1A1A1A; --secondary:#54514F; --green:#00DC82; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:400 17px/1.5 Plex,system-ui,sans-serif; }
+    main { max-width:1160px; margin:auto; padding:44px 40px 32px; }
+    header { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:end; margin-bottom:28px; }
+    h1 { font:700 clamp(48px,7vw,84px)/1 Nunito,system-ui,sans-serif; margin:0; letter-spacing:-.025em; }
+    .intro { max-width:430px; margin:0; font-size:20px; line-height:1.4; }
+    video { display:block; width:100%; aspect-ratio:16/9; height:auto; background:#1A1A1A; }
+    .actions { display:flex; gap:20px 28px; align-items:center; flex-wrap:wrap; margin-top:22px; }
+    button { appearance:none; border:1px solid var(--ink); border-radius:0; min-height:46px; padding:10px 24px; color:var(--ink); background:var(--green); font:inherit; cursor:pointer; }
+    button:hover { background:#00C675; }
+    a { color:var(--ink); text-underline-offset:4px; text-decoration-thickness:1px; }
+    a:hover { text-decoration-thickness:2px; }
+    button:focus-visible,a:focus-visible,video:focus-visible { outline:3px solid var(--ink); outline-offset:4px; }
+    #status { color:var(--secondary); font-size:15px; margin:0; }
+    footer { display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px 24px; margin-top:32px; color:var(--secondary); font-size:14px; }
+    footer p { margin:0; }
+    @media(max-width:680px) {
+      main { padding:28px 18px; }
+      header { grid-template-columns:1fr; gap:18px; margin-bottom:22px; }
+      .intro { max-width:34ch; font-size:18px; }
+      .actions { gap:16px 20px; }
+      footer { display:block; margin-top:26px; }
+      footer p+p { margin-top:8px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Drift</h1>
+      <p class="intro">Breath-paced XR with independent heart-rate visualization.</p>
+    </header>
+    <video id="demo" controls playsinline preload="metadata" aria-label="Drift demonstration video">
+      <source src="./Drift_demo_web.mp4" type="video/mp4">
+      Your browser does not support embedded video. <a href="./Drift_demo_web.mp4">Open the demo video</a>.
+    </video>
+    <div class="actions">
+      <button id="play" type="button" aria-controls="demo">Play video</button>
+      <a href="https://raw.githubusercontent.com/painfulmoments/Binwei-Lei/main/documents/drift/VRST_demo_document.pdf">Download demo document (PDF)</a>
+      <p id="status" role="status" aria-live="polite">Complete demonstration · 1:54 · English</p>
+    </div>
+    <footer>
+      <p>Qilei Sun, Binwei Lei, Yeyun Wan, Ruoxuan Mai</p>
+      <p>Xi’an Jiaotong-Liverpool University</p>
+    </footer>
+  </main>
+  <script>
+    const video=document.getElementById('demo');
+    const play=document.getElementById('play');
+    const status=document.getElementById('status');
+    play.addEventListener('click',async()=>{
+      if(video.paused){
+        try { await video.play(); }
+        catch { status.textContent='Use the video controls to start playback.'; }
+      } else { video.pause(); }
+    });
+    video.addEventListener('play',()=>{play.textContent='Pause video';});
+    video.addEventListener('pause',()=>{play.textContent=video.ended?'Replay video':'Play video';});
+    video.addEventListener('ended',()=>{play.textContent='Replay video';});
+    video.addEventListener('loadedmetadata',()=>{
+      const seconds=Math.round(video.duration);
+      status.textContent=`Complete demonstration · ${Math.floor(seconds/60)}:${String(seconds%60).padStart(2,'0')} · English`;
+    });
+    video.addEventListener('error',()=>{status.textContent='The video could not load. Please reload this page or open the video directly.';});
+  </script>
+</body>
+</html>
